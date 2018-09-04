@@ -39,7 +39,7 @@ describe('POST /todos', () => {
             });
     });
 
-    it('should not create todo with invalid bod data', function (done) {
+    it('should not create todo with invalid body data', function (done) {
         request(app)
             .post('/todos')
             .send({})
