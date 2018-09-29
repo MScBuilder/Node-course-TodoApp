@@ -190,7 +190,7 @@ describe('PATCH /todos/:id', () => {
             .patch(`/todos/${hexId}`)
             .set('x-auth', users[1].tokens[0].token)
             .send({text, completed: true})
-            .expect(400s
+            .expect(400)
             .end((err, res) => {
                 if(err) {
                     return done(err);
